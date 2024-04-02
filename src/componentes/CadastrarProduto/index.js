@@ -88,13 +88,13 @@ const CadastrarProduto = () => {
       msgErro.categoria = "A categoria do produto é obrigatorio. ";
       valid = false;
     }
-    if (quantidadeNoEstoque.trim()) {
+    if (quantidadeNoEstoque > 0) {
       msgErro.quantidadeNoEstoque = "";
     } else {
       msgErro.quantidadeNoEstoque = "A quantidade deve ser maior que zero. ";
       valid = false;
     }
-    if (custo.trim()) {
+    if (custo > 0) {
       msgErro.custo = "";
     } else {
       msgErro.custo = "O custo deve ser maior que zero. ";
